@@ -1,8 +1,5 @@
-# Alpine 3.7 버전 golang 1.10.1 이미지를 사용
-FROM golang:1.10.1-alpine3.7
-
-# 8080 포트 오픈
-EXPOSE 8080
+# Alpine 3.11 버전 golang 1.14.1 이미지를 사용
+FROM golang:1.14.1-alpine3.11
 
 # 빌드할 머신에 있는 main.go 파일을 컨테이너에 복사
 COPY ./main.go ./

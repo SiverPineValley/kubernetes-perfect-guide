@@ -1,5 +1,5 @@
 # Stage 1 컨테이너(애플리케이션 빌드)
-FROM golang:1.10.1-alpine3.7 as builder
+FROM golang:1.14.1-alpine3.11 as builder
 COPY ./main.go ./
 RUN CGO_ENABLED=0 go build -o /go-app ./main.go
 
