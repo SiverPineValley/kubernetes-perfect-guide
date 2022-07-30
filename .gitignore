@@ -1,2 +1,5 @@
 .DS_Store
-
+*.csr
+*.crt
+*.key
+req_info
