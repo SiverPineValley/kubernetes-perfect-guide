@@ -4,7 +4,7 @@ metadata:
   name: sample-statefulset
 spec:
   serviceName: sample-statefulset
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: sample-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: nginx-container
-          image: nginx:1.12
+          image: nginx:1.16
           ports:
             - containerPort: 80
           volumeMounts:

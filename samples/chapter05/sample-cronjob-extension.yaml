@@ -1,10 +1,10 @@
 apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
-  name: sample-cronjob
+  name: sample-cronjob-extension
 spec:
   schedule: "*/1 * * * *"
-  concurrencyPolicy: Allow
+  concurrencyPolicy: Forbid
   startingDeadlineSeconds: 30
   successfulJobsHistoryLimit: 5
   failedJobsHistoryLimit: 3
