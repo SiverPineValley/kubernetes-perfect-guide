@@ -4,7 +4,7 @@ metadata:
   name: sample-lb-fixip
 spec:
   type: LoadBalancer
-  loadBalancerIP: xxx.xxx.xxx.xxx
+  loadBalancerIP: 127.0.0.1
   ports:
     - name: "http-port"
       protocol: "TCP"
